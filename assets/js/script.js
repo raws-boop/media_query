@@ -13,7 +13,7 @@ fetch("https://streaming-availability.p.rapidapi.com/search/basic?country=us&ser
 .catch(err => {
 	console.error(err);
 });
-
+s
 
 //Movie Database *use for search*
 fetch("https://movie-database-imdb-alternative.p.rapidapi.com/?i=tt4154796&r=json", {
