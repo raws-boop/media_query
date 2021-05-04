@@ -12,9 +12,7 @@ fetch("https://streaming-availability.p.rapidapi.com/search/basic?country=us&ser
 })
 .catch(err => {
 	console.error(err);
-<<<<<<< HEAD
-=======
-});
+})
 
 //Movie Database *use for search*
 fetch("https://movie-database-imdb-alternative.p.rapidapi.com/?i=tt4154796&r=json", {
@@ -44,5 +42,4 @@ fetch("https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?
 })
 .catch(err => {
 	console.error(err);
->>>>>>> d814b6aa1b54a0d8ff5a44790b0c96b1f5345d69
 });
