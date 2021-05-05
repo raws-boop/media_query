@@ -1,45 +1,79 @@
 
-//Streaming Availability API endpoints
-fetch("https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&genre=18&page=1&language=en", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-key": "cb566b1c57msh5161a956c5815e1p162df6jsn46969de8ab19",
-		"x-rapidapi-host": "streaming-availability.p.rapidapi.com"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
+var searchResultsEl = document.querySelector("#searchResults")
+var searchEl = document.querySelector("#searchForm")
+// var searchBtnEl = document.querySelector("#inputButton")
+
+function displayResults(event){
+	event.preventDefault();
+
+	var inputSearchVal = document.querySelector("#inputsearch").value
+
+	//var text = document.createElement('h1')
+	//text.textContent = data
+	//searchResultsEl.append(text)
+
+	console.log(inputSearchVal)
+	search( inputSearchVal);
+}
+
+function searchResultsEl() {
 
 //Movie Database *use for search*
 fetch("https://movie-database-imdb-alternative.p.rapidapi.com/?i=tt4154796&r=json", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-key": "cb566b1c57msh5161a956c5815e1p162df6jsn46969de8ab19",
-		"x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com"
+	method: "GET",
+	headers: {
+		"x-rapidapi-key": 'cb566b1c57msh5161a956c5815e1p162df6jsn46969de8ab19',
+		"x-rapidapi-host": 'movie-database-imdb-alternative.p.rapidapi.com',
 	}
 })
-.then(response => {
-	console.log(response);
+.then(function (response) {
+	return response.json();
 })
 .catch(err => {
-	console.error(err);
-});
+	//console.error(err);
+})
 
+.then(function (data) {
+    console.log(data);
+})
+}
 //Utelly database - returns streaming info on search * Son use this first
 fetch("https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=bojack&country=uk", {
-	"method": "GET",
-	"headers": {
+	method: "GET",
+	headers: {
 		"x-rapidapi-key": "cb566b1c57msh5161a956c5815e1p162df6jsn46969de8ab19",
 		"x-rapidapi-host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com"
 	}
 })
-.then(response => {
-	console.log(response);
+.then(function (response) {
+	return response.json();
 })
 .catch(err => {
-	console.error(err);
-});
+	//console.error(err);
+})
+
+.then(function (data) {
+    console.log(data);
+})
+//Streaming Availability API endpoints
+fetch("https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&genre=18&page=1&language=en", {
+	method: "GET",
+	headers: {
+		"x-rapidapi-key": "cb566b1c57msh5161a956c5815e1p162df6jsn46969de8ab19",
+		"x-rapidapi-host": "streaming-availability.p.rapidapi.com"
+	}
+})
+//.then(response => {
+	//console.log(response);
+	.then(function (response) {
+		return response.json();
+})
+.catch(err => {
+	//console.error(err);
+})
+
+.then(function (data) {
+    console.log(data);
+})
+
+searchEl.addEventListener('submit', displayResults)
