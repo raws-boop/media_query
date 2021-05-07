@@ -6,13 +6,15 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 </head>
-<!-- <style>
+<!-- <style-->
 
-</style> -->
+<!--/style> -->
+<body>
 <header>
   <nav class="light-blue">
     <div class="nav-wrapper">
@@ -22,9 +24,11 @@
           <div class="center row">
             <div class="col s12 ">
               <div class="row" id="topbarsearch">
-                <div class="input-field col s6 s12 red-text">
-                  <i class="red-text material-icons prefix">search</i>
-                  <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete red-text">
+                <div class="input-field col s6 s12 black-text">
+                  <form id="searchForm">
+                  <i class="black-text material-icons prefix">search</i>
+                  <input type="text" placeholder="search" id="inputSearch" class="autocomplete black-text">
+                  </form>
                 </div>
               </div>
             </div>
@@ -36,41 +40,41 @@
       </ul>
     </div>
   </nav>
-  <div id= "query" class="row">
+  <div id="query" class="row">
     <div class="col s4">
-    <form action="#">
-      <p>
-        <label>
-          <input type="checkbox" />
-          <span>APPLE TV</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input type="checkbox" />
-          <span>AMAZON Prime</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input type="checkbox" />
-          <span>NETFLIX</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input type="checkbox" />
-          <span>HULU</span>
-        </label>
-      </p>
-      <p>
-        <label>
-          <input type="checkbox" />
-          <span>DISNEY+</span>
-        </label>
-      </p>
-    </form>
-  </div>
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>APPLE TV</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>AMAZON Prime</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>NETFLIX</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>HULU</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>DISNEY+</span>
+          </label>
+        </p>
+      </form>
+    </div>
     <div class="col s4">
       <form action="#">
         <p>
@@ -105,32 +109,34 @@
         </p>
       </form>
     </div>
-      <div class="col s4">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span>TV/SERIES</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span>MOVIE</span>
-            </label>
-          </p>
-      
+    <div class="col s4">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>TV/SERIES</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>MOVIE</span>
+          </label>
+        </p>
+
     </div>
-    
+
   </div>
-  <button class="btn waves-effect waves-light" type="submit" name="action">GO GO Media Query
+  <button class="btn waves-effect waves-light" type="submit" name="action"> GO GO Media Query
     <i class="material-icons right">send</i>
   </button>
 </header>
+<div id="searchResults">
 
 <body>
-
-
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
