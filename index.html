@@ -19,7 +19,7 @@
   <nav class="light-blue">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo black-text">MEDIA QUERY</a>
-      <ul class="hide-on-med-and-down right nav-ul">
+      <ul class="hide-on-med-and-down right nav-ul right-align">
         <li>
           <div class="center row">
             <div class="col s12 ">
@@ -37,9 +37,14 @@
         <li><a href="sass.html" class="black-text">TV/MOVIE</a></li>
         <li><a href="badges.html" class="black-text">MUSIC</a></li>
         <li><a href="collapsible.html" class="black-text">VIDEOSGAMES</a></li>
+        <img src="assets/images/moon.png" id="icon">
       </ul>
+      
     </div>
+   
   </nav>
+  
+<body>
   <div id="query" class="row">
     <div class="col s4">
       <form action="#">
@@ -130,13 +135,30 @@
   <button class="btn waves-effect waves-light" type="submit" name="action" id="queryBtn"> GO GO Media Query
     <i class="material-icons right">send</i>
   </button>
+    <button class="btn waves-effect waves-light" type="submit" name="action">PREVIOUSLY
+    <i class="material-icons right">send</i>
+  </button>
 </header>
 <div id="searchResults">
 
-<body>
+
+
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script>
+  var icon=document.getElementById("icon");
+  icon.onclick=function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src= "assets/images/sun.png";
+    }else{
+      icon.src=assets/images/moon.png;
+    }
+
+  }
+  
+</script>
 </body>
 
 </html>
