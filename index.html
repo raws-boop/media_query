@@ -45,31 +45,31 @@
       <form action="#">
         <p>
           <label>
-            <input type="checkbox" />
-            <span>APPLE TV</span>
+            <input type="radio" name="service" id="HBO" value="hbo" />
+            <span>HBO</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
-            <span>AMAZON Prime</span>
+            <input type="radio" name="service" id="AmazonPrime" value="prime" />
+            <span>AMAZON PRIME</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="service" id="Netflix" value="netflix"/>
             <span>NETFLIX</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="service" id="Hulu" value="hulu" />
             <span>HULU</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="service" id="Disney" value="disney" />
             <span>DISNEY+</span>
           </label>
         </p>
@@ -79,31 +79,31 @@
       <form action="#">
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="genre" id="Action" value="28" />
             <span>ACTION</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="genre" id="Comedy" value="35" />
             <span>COMEDY</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="genre" id="Romance" value="10749" />
             <span>ROMANCE</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="genre" id="Drama" value="18" />
             <span>DRAMA</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="genre" id="Horror" value="27" />
             <span>HORROR</span>
           </label>
         </p>
@@ -113,13 +113,13 @@
       <form action="#">
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="media" id="TVSeries" value="series" />
             <span>TV/SERIES</span>
           </label>
         </p>
         <p>
           <label>
-            <input type="checkbox" />
+            <input type="radio" name="media" id="Movie" value="movie" />
             <span>MOVIE</span>
           </label>
         </p>
@@ -127,7 +127,7 @@
     </div>
 
   </div>
-  <button class="btn waves-effect waves-light" type="submit" name="action"> GO GO Media Query
+  <button class="btn waves-effect waves-light" type="submit" name="action" id="queryBtn"> GO GO Media Query
     <i class="material-icons right">send</i>
   </button>
 </header>
