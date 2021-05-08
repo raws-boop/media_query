@@ -1,7 +1,7 @@
 
   var icon=document.getElementById("icon");
   // Initialize a variable that will look for 'isDarkMode' in local storage, if it is undefined, defaut to false
-  let isDarkmode = window.localStorage.getItem('isDarkmode') || false;
+  let isDarkmode = localStorage.getItem('isDarkmode') || false;
   console.log(isDarkmode)
 
   // separate the onclick to be able to toggle our variable
