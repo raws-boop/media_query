@@ -1,23 +1,20 @@
 .nav-ul {
-height: 20px;
+  height: 20px;
 }
 
 body {
-background:var(--primary-color)
+  background: var(--primary-color);
 }
 
-:root{
-    --primary-color: #d0e0e3ff;
-    /* --secondary-color: #212121; */
+:root {
+  --primary-color: #d0e0e3ff;
 }
 
-.dark-theme{
-    --primary-color: black
-    /* --secondary-color: black; */
-    
+.dark-theme {
+  --primary-color: black;
 }
 
-#icon{
-    width: 30px;
-    cursor: pointer;
+#icon {
+  width: 30px;
+  cursor: pointer;
 }
