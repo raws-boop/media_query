@@ -39,4 +39,10 @@ Easy Tutorials
 Dark Theme https://www.youtube.com/watch?v=9LZGB3OLXNQ
 Sun and Moon icon: https://doc-0g-8c-docs.googleusercontent.com/docs/securesc/1f8s46f1ect42gfft23g3dqmcc7tphce/ip7qvv6q760t6n63vasb68i1ej80d1mf/1620420825000/11547991968947048879/06145021185591029006/1luGpVOJhekRCZ479DWn9-pfmx4GuR1oj?e=download&authuser=0&nonce=2su775nu5t56e&user=06145021185591029006&hash=0e0d31uaq7kmnuv8ndgprecvu65ehjtb
 
-## Deployed Link: https://raws-boop.github.io/media_query/
+## Deployed Link: 
+https://raws-boop.github.io/media_query/
+
+## Presentation link 
+https://docs.google.com/presentation/d/1_SwSgfyeSjbJPB2aNt48JHHOuNrLgKS24O13GNXbxbc/edit#slide=id.g29f43f0a72_0_24
+
+
