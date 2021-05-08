@@ -3,5 +3,21 @@ height: 20px;
 }
 
 body {
-background-color: #d0e0e3ff;
+background:var(--primary-color)
+}
+
+:root{
+    --primary-color: #d0e0e3ff;
+    /* --secondary-color: #212121; */
+}
+
+.dark-theme{
+    --primary-color: black
+    /* --secondary-color: black; */
+    
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
 }
