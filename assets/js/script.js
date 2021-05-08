@@ -40,12 +40,14 @@ function searchMovieOrTv(inputSearchVal) {
 }
 //search bar api access to return where to watch user input
 function displaySearchResults(dataResults) {
-    for (var i = 0; i < 8; i++) {
+    for (var i = 0; i < length; i++) {
         console.log('Available on:', dataResults.results[i].locations[i].display_name);
+        _dataResults_.results[i].locations[i].display_name;
     }
-    searchResultsEl.innerHtml -''
+    // searchResultsEl.innerHtml -''
     
     var li1 = document.createElement("li");
+    var li2 = document.createElement("li");
 
     li1.textContent = dataResults.results[i].locations[i].display_name;
     li2.textContent = dataResults.results[i].locations[i].url;
@@ -140,14 +142,14 @@ function displayQueryResults(dataResults) {
     var li7 = document.createElement("li");
     var li8 = document.createElement("li");
 
-    li1.textContent = dataResults(i[0]).title;
-    li2.textContent = dataResults(title);
-    li3.textContent = dataResults(i[2]);
-    li4.textContent = 'title';
-    li5.textContent = 'title';
-    li6.textContent = 'title';
-    li7.textContent = 'title';
-    li8.textContent = 'title';
+    li1.textContent = dataResults.results[0].title;
+    li2.textContent = dataResults.results[1].title;
+    li3.textContent = dataResults.results[2].title;
+    li4.textContent = dataResults.results[3].title;
+    li5.textContent = dataResults.results[4].title;
+    li6.textContent = dataResults.results[5].title;
+    li7.textContent = dataResults.results[6].title;
+    li8.textContent = dataResults.results[7].title;
     // console.log(title[i].innerText)
     // display query results by program title
 
