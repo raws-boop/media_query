@@ -12,15 +12,10 @@ The first step of developing was app was with the use of the CSS framework Mater
 
 The user can find a movie or tv show two different ways. One way a user can find random titles is by toggling the radio buttons and then hitting the button at the bottom on the screen. Another way the user can find a title is by doing a specific search in the sech bar in the navigation bar and then hitting the enter key. The user can toggle dark mode by toggling the Moon icon in the right and conner to revert back to light mode the user need to toggle the Sun icon in the same location. 
 
-## ScreenShot 
+## Gif 
 
-![Image description](assets/images/screencapture-file-Users-michaeladusah-Projects-media-query-index-html-2021-05-07-22_33_19.png)
 
-![Image description](assets/images/screencapture-file-Users-michaeladusah-Projects-media-query-index-html-2021-05-07-22_34_20.png)
-
-![Image description](assets/images/screencapture-file-Users-michaeladusah-Projects-media-query-index-html-2021-05-07-22_34_58.png)
-
-![Image description](assets/images/screencapture-file-Users-michaeladusah-Projects-media-query-index-html-2021-05-07-22_35_11.png)
+![Image description](assets/images/demo.gif)
 
 
 ## Credits 
