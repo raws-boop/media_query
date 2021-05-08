@@ -43,6 +43,7 @@ function displaySearchResults(dataResults) {
     for (var i = 0; i < length; i++) {
         console.log('Available on:', dataResults.results[i].locations[i].display_name);
         _dataResults_.results[i].locations[i].display_name;
+        
     }
     // searchResultsEl.innerHtml -''
     
@@ -164,14 +165,14 @@ function displayQueryResults(dataResults) {
 
     // append list items to display text
 
-    li1.setAttribute("style", " color:#90caf9; background: #b2ebf2; padding: 5px; margin: 10px;");
-    li2.setAttribute("style", " color:#90caf9; background: #b2ebf2; padding: 5px; margin: 10px;");
-    li3.setAttribute("style", " color:#90caf9; background: #b2ebf2; padding: 5px; margin: 10px;");
-    li4.setAttribute("style", " color:#90caf9; background: #b2ebf2; padding: 5px; margin: 10px;");
-    li5.setAttribute("style", " color:#90caf9; background: #b2ebf2; padding: 5px; margin: 10px;");
-    li6.setAttribute("style", " color:#90caf9; background: #b2ebf2; padding: 5px; margin: 10px;");
-    li7.setAttribute("style", " color:#90caf9; background: #b2ebf2; padding: 5px; margin: 10px;");
-    li8.setAttribute("style", " color:#90caf9; background: #b2ebf2; padding: 5px; margin: 10px;");
+    li1.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li2.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li3.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li4.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li5.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li6.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li7.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li8.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
     // set li attributes
 }
 
