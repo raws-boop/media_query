@@ -143,14 +143,14 @@ function displayQueryResults(dataResults) {
     var li7 = document.createElement("li");
     var li8 = document.createElement("li");
 
-    li1.textContent = dataResults.results[0].title;
-    li2.textContent = dataResults.results[1].title;
-    li3.textContent = dataResults.results[2].title;
-    li4.textContent = dataResults.results[3].title;
-    li5.textContent = dataResults.results[4].title;
-    li6.textContent = dataResults.results[5].title;
-    li7.textContent = dataResults.results[6].title;
-    li8.textContent = dataResults.results[7].title;
+    li1.textContent = dataResults.results[0].title + " || IMDb Rating: " + dataResults.results[0].imdbRating;
+    li2.textContent = dataResults.results[1].title + " || IMDb Rating: " + dataResults.results[1].imdbRating;
+    li3.textContent = dataResults.results[2].title + " || IMDb Rating: " + dataResults.results[2].imdbRating;
+    li4.textContent = dataResults.results[3].title + " || IMDb Rating: " + dataResults.results[3].imdbRating;
+    li5.textContent = dataResults.results[4].title + " || IMDb Rating: " + dataResults.results[4].imdbRating;
+    li6.textContent = dataResults.results[5].title + " || IMDb Rating: " + dataResults.results[5].imdbRating;
+    li7.textContent = dataResults.results[6].title + " || IMDb Rating: " + dataResults.results[6].imdbRating;
+    li8.textContent = dataResults.results[7].title + " || IMDb Rating: " + dataResults.results[7].imdbRating;
     // console.log(title[i].innerText)
     // display query results by program title
 

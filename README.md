@@ -1,130 +1,42 @@
-# media_query
-Search tool intended to connect users with film and television to items of interest currently available on their streaming services
+# MEDIA QUERY
+
+## Description
+
+The motivation to build the app was to solve a problem every member of our group had faced, which was trying to find what to watch on TV either it be a movie or a series. The app allows the user to search for a television show or movie and locate which streaming service it can viewed on. The user can find a specific title of a media source or by user filters to find where to watch it. 
+
+## Installation 
+
+The first step of developing was app was with the use of the CSS framework Materialize. The second step we needed to achieve was finding and choosing a working API that would fit our needs, we used an API marketplace known as RapidAPI to locate our two APIs. We also used JavaScript to connect the HTML components to the API to display our search results on the page so the user could make sense of the date that was being fetched. Our group added a dark mode to the app which can be toggled by the user, in order for the users app appearance to be persistent we saved that information in local storage. 
+
+## Usage 
+
+The user can find a movie or tv show two different ways. One way a user can find random titles is by toggling the radio buttons and then hitting the button at the bottom on the screen. Another way the user can find a title is by doing a specific search in the sech bar in the navigation bar and then hitting the enter key. The user can toggle dark mode by toggling the Moon icon in the right and conner to revert back to light mode the user need to toggle the Sun icon in the same location. 
+
+## Gif 
 
 
-# Project 1
-
-## Application Requirements
-
-Your project should fulfill the following requirements:
-
-* Use a CSS framework other than Bootstrap.
-
-* Be deployed to GitHub Pages.
-
-* Be interactive (i.e., accept and respond to user input).
-
-* Use at least two server-side APIs.
-
-* Does not use alerts, confirms, or prompts (use modals).
-
-* Use client-side storage to store persistent data.
-* Be responsive.
-
-* Have a polished UI.
-
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+![Image description](assets/images/demo.gif)
 
 
-## Presentation Requirements
+## Credits 
 
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
+Ross Holtrop
+https://github.com/raws-boop
 
-* Elevator pitch: a one minute description of your application
+Drew Gillespie
+https://github.com/drewg07
 
-* Concept: What is your user story? What was your motivation for development?
+Son Le 
+https://github.com/Sonlocgiau
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+Michael Adusah
+https://github.com/MikeAdu
 
-* Demo: Show your stuff!
+Materialize 
+https://materializecss.com/
 
-* Directions for Future Development
+Easy Tutorials 
+Dark Theme https://www.youtube.com/watch?v=9LZGB3OLXNQ
+Sun and Moon icon: https://doc-0g-8c-docs.googleusercontent.com/docs/securesc/1f8s46f1ect42gfft23g3dqmcc7tphce/ip7qvv6q760t6n63vasb68i1ej80d1mf/1620420825000/11547991968947048879/06145021185591029006/1luGpVOJhekRCZ479DWn9-pfmx4GuR1oj?e=download&authuser=0&nonce=2su775nu5t56e&user=06145021185591029006&hash=0e0d31uaq7kmnuv8ndgprecvu65ehjtb
 
-* Links to the deployed application and the GitHub repository
-
-
-## Grading Metrics 
-
-| Metric                | Weight | 
-| ---                   | ---    |
-| Technical Criteria    | 25%    |
-| Concept               | 10%    |
-| Deployment            | 20%    |
-| Repository Quality    | 10%    |
-| Application Quality   | 15%    |
-| Presentation          | 10%    |
-| Collaboration         | 10%    |
-
-
-## Grading Requirements
-
-This project is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 25%
-
-* Satisfies the following code requirements:
-
-	* Application uses at least two server-side APIs.
-
-    * Application uses client-side storage to store persistent data.
-
-    * Application doesn't use JS alerts, prompts, or confirms (uses modals instead).
-
-    * Application uses a CSS framework other than Bootstrap.
-
-    * Application is interactive (accepts and responds to user input)
-
-### Concept 10%
-
-* Application should be a unique and novel idea.
-
-* Your group should clearly and concisely articulate your project idea.
-
-### Deployment: 20%
-
-* Application deployed at live URL and loads with no errors.
-
-* Application GitHub URL submitted.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains a quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using Powerpoint or a similar presentation software.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-
-## Submission on BCS
-
-Each member is required to submit the following:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository.
+## Deployed Link: https://raws-boop.github.io/media_query/
