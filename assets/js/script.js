@@ -31,13 +31,44 @@ function searchMovieOrTv(inputSearchVal) {
         .then(function (data) {
             console.log(data);
             //call an additional function to display results
+            displaySearchResults(data)
         })
         .catch(err => {
             //console.error(err);
         })
     console.log("post fetch");
 }
+//search bar api access to return where to watch user input
+function displaySearchResults(dataResults) {
+    for (var i = 0; i < 8; i++) {
+        console.log('Available on:', dataResults.results[i].locations[i].display_name);
+    }
+    searchResultsEl.innerHtml -''
+    
+    var li1 = document.createElement("li");
 
+    li1.textContent = dataResults.results[i].locations[i].display_name;
+    li2.textContent = dataResults.results[i].locations[i].url;
+
+    // console.log(title[i].innerText)
+    // display query results by program title
+
+    searchResultsEl.appendChild(li1)
+    searchResultsEl.appendChild(li2)
+
+    // append list items to display text
+
+    li1.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li2.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li3.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li4.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li5.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li6.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li7.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    li8.setAttribute("style", " color: #d0e0e3ff; background: #06a9f4; padding: 5px; margin: 10px;");
+    // set li attributes
+
+}
 //Streaming Availability API endpoints
 fetch("https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&genre=18&page=1&language=en", {
     "method": "GET",
@@ -52,47 +83,6 @@ fetch("https://streaming-availability.p.rapidapi.com/search/basic?country=us&ser
     .catch(err => {
         console.error(err);
     })
-
-//Movie Database *use for search*
-// fetch("https://movie-database-imdb-alternative.p.rapidapi.com/?i=tt4154796&r=json", {
-// 	method: "GET",
-// 	headers: {
-// 		"x-rapidapi-key": 'cb566b1c57msh5161a956c5815e1p162df6jsn46969de8ab19',
-// 		"x-rapidapi-host": 'movie-database-imdb-alternative.p.rapidapi.com',
-// 	}
-// 	})
-// 	.then(function (response) {
-// 		return response.json();
-// 	})
-// 	.catch(err => {
-// 		//console.error(err);
-// 	})
-
-// 	.then(function (data) {
-// 		console.log(data);
-// 	})
-
-// //Streaming Availability API endpoints
-// fetch("https://streaming-availability.p.rapidapi.com/search/basic?country=us&service=netflix&type=movie&genre=18&page=1&language=en", {
-// 	method: "GET",
-// 	headers: {
-// 		"x-rapidapi-key": "cb566b1c57msh5161a956c5815e1p162df6jsn46969de8ab19",
-// 		"x-rapidapi-host": "streaming-availability.p.rapidapi.com"
-// 	}
-// })
-// //.then(response => {
-// 	//console.log(response);
-// 	.then(function (response) {
-// 		return response.json();
-// })
-// .catch(err => {
-// 	//console.error(err);
-// })
-
-// .then(function (data) {
-//     console.log(data);
-// })
-
 
 function displayBtnResults(event) {
     event.preventDefault();
