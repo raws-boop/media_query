@@ -1,13 +1,13 @@
 
   var icon=document.getElementById("icon");
   // Initialize a variable that will look for 'isDarkMode' in local storage, if it is undefined, defaut to false
-  let isDarkmode = localStorage.getItem('isDarkmode') || false;
+  let isDarkmode = JSON.parse(localStorage.getItem('isDarkmode')) || false;
   console.log(isDarkmode)
 
   // separate the onclick to be able to toggle our variable
   icon.onclick=function(){
     isDarkmode = !isDarkmode
-    localStorage.setItem("isDarkmode", isDarkmode)
+    localStorage.setItem("isDarkmode", JSON.stringify(isDarkmode))
     isDarkModeFunction();
   }
 
@@ -24,3 +24,4 @@
 
   // call the function upon document load
   isDarkModeFunction();
+  localStorage.removeItem("dark-theme");
